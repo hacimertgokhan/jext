@@ -14,7 +14,7 @@ import java.util.function.Function;
 
 public class Router {
     private final Map<String, Function<Map<String, String>, String>> routes = new HashMap<>();
-    private final String cssLink = "<link rel=\"stylesheet\" href=\"/jext/style.css\">"; // CSS Linki
+    private final String cssLink = "<link rel=\"stylesheet\" href=\"./../../jext/opt/style.css\">"; // CSS Linki
 
     public void addRoute(String path, Function<Map<String, String>, String> handler) {
         routes.put(path, handler);
@@ -112,7 +112,7 @@ public class Router {
             <head>
                 <meta charset="UTF-8">
                 <title>%s</title>
-                <link rel="stylesheet" href="/jext/style.css">
+                <link rel="stylesheet" href="../../../jext/opt/style.css">
             </head>
             <body>
                 <h1>Welcome to %s page!</h1>
